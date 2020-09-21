@@ -11,7 +11,7 @@
 
   <h1> Formulario de adopcion canina </h1>
 
-<form action = "d/ejemplo.html" method = "POST">
+<form action = "/ejemplo.html" method = "POST">
 	<p> Datos del responsable de la adopcion </p>
 
   <label for = "respuesta_nombre"> Nombres: </label>
@@ -24,20 +24,43 @@
 <br>
   <label for = "respuesta_edad"> Edad: </label>
   <input type = "text" name = "edad" id = "respuesta_edad">
+</form>
 
+
+<form>
+  <br>
+  <input type = "radio" id = "hombre" name = "respuesta" value = "hombre">
+  <label for = "hombre"> Hombre </label>
+  
+  <input type = "radio" id = "mujer" name = "respuesta" value = "mujer">
+  <label for = "mujer"> Mujer </label>
+
+  <input type = "radio" id = "especificar" name = "respuesta" value = "especificar">
+  <label for = "especificar"> Sin especificar </label>
 </form>
 
 <form>
   <br>
-  <label for = "hombre"> Hombre </label>
-  <input id = "hombre" name = "sexo" type = "checkbox" value = "hombre">
+  <label for = "ciudad"> Ciudad en el que se encuantra actualmente </label>
   <br>
-  <label for = "mujer"> Mujer </label>
-  <input id = "mujer" name = "sexo" type = "checkbox" value = "mujer">
-  <br>
-  <label for = "especificacion"> Sin especificacion </label>
-  <input id = "especificacion" name = "sexo" type = "checkbox" value = "especificacion">
+  <input type = "text" list = "ciudades" id = "ciudad" name = "ciudad">
+
+  <datalist id = "ciudades">
+    <option value = "Monterrey"> </option>
+    <option value = "Guadalajara"> </option>
+    <option value = "Tijuana"> </option>
+    <option value = "Ciudad de México"> </option>
+    <option value = "Ciudad Juarez"> </option>
+    <option value = "Hermosillo"> </option>
+    <option value = "Cancun"> </option>
+    <option value = "Guanajuato"> </option>
+    <option value = "Leon"> </option>
+    <option value = "Otro"> </option>
+  </datalist>
 </form>
+
+
+
 
 <form>
   <p> ¿Mascotas con las que cuenta actualmente? </p>
@@ -45,7 +68,7 @@
 </form>
 
 <form>
-	<br>
+	
 	 <p> Gustos en cuanto a las mascotas </p>
 
   <label for = "raza"> Raza </label>
@@ -60,11 +83,48 @@
 
 <form>
   <br>
+  <input type = "radio" id = "macho" name = "respuesta" value = "macho">
   <label for = "macho"> Macho </label>
-  <input id = "macho" name = "sexo" type = "checkbox" value = "macho">
-  <br>
+
+  <input type = "radio" id = "hembra" name = "respuesta" value = "hembra">
   <label for = "hembra"> Hembra </label>
-  <input id = "hembra" name = "sexo" type = "checkbox" value = "hembra">
+</form>
+
+<form>
+  <br>
+  <label for = "semestre"> Numero de mascotas que le gustaria adoptar: </label><br>
+  <input id = "semestre" name = "semestre" type = "number" step = "1">
+ 
+</form>
+
+
+<form>
+  <p> Porque le gustan los perros (elija 2 opciones) </p>
+  <label for = "cariñosos"> Cariñosos </label>
+  <input id = "cariñosos" name = "porque" type = "checkbox" value = "cariñosos">
+  <br>
+  <label for = "leales"> Leales </label>
+  <input id = "leales" name = "porque" type = "checkbox" value = "leales">
+  <br>
+  <label for = "protectores"> Protectores </label>
+  <input id = "protectores" name = "porque" type = "checkbox" value = "protectores">
+  <br>
+  <label for = "jugeton"> Jugetones </label>
+  <input id = "jugeton" name = "porque" type = "checkbox" value = "jugeton">
+  <br>
+  <label for = "otro"> Otro </label>
+  <input id = "otro" name = "porque" type = "checkbox" value = "otro">
+</form>
+
+
+
+<form>
+  <br>
+  <label for = "feliz"> Que tan feliz estas con el hecho de poder adoptar</label>
+  <br>
+  <label for = "feliz">Mal --- Bien --- Genial</label>
+  <br>
+  <input id = "feliz" name = "feliz" type = "range" min = "1" max = "5" step = "0">
 </form>
 
 <form>
