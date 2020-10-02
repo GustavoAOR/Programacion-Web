@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <title> Investigacioin </title>
+</head>
+
+<body>
+
+<link href = "esti.css" type = "text/css" rel="stylesheet">
+
+
+<div align="center">
+    <h1 id="titulo-grande"> Modelo de cajas </h1>
+    </div>
+
+
+
+    <div id="#definicion">
+    <h2 id="ti"> ¿Qué es un modelo de caja?</h2>
+
+    <p>El modelo de cajas o <em class="especial">"box model"</em> es seguramente la característica más importante del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos los elementos de las páginas se representen mediante cajas rectangulares.</p>
+
+    <p>
+      Las cajas de una página se crean automáticamente. Cada vez que se inserta una etiqueta HTML,se crea una nueva caja rectangular que encierra los contenidos de ese elemento. La siguiente imagen muestra las tres cajas rectangulares que crean las tres etiquetas HTML que incluye la página.<br>
+      El denominado modelo de cajas fue una pesadilla para los desarrolladores web, puesto que se mostraba visualmente de forma diferente en Internet Explorer respecto a los demás navegadores.
+    </p>
+  
+  <div align="center">
+    <img src = "p1.jpg" alt = "muestra de la creacion automatica" />
+
+  </div>
+
+  <p>
+    Las cajas de las páginas no son visibles a simple vista porque inicialmente no muestran ningún color de fondo ni ningún borde. 
+  </p>
+
+  <p>
+    Los navegadores crean y colocan las cajas de forma automática, pero CSS permite modificar todas sus características. Cada una de las cajas está formada por seis partes, tal y como muestra la siguiente imagen
+  </p>
+
+ </div>
+
+
+
+
+
+
+ <div id=componenetes>
+<div>
+  <h2 id="ti"> Componentes de un modelo de caja </h2>
+  <p>
+    La representación básica del modelo de cajas es la siguiente, donde podemos observar varios conceptos importantes a diferenciar
+  </p>
+  <ul>
+    <li>
+      El <strong><em class="resal">borde</em></strong> (border). En negro, es el límite que separa el interior del exterior del elemento.
+    </li>
+    <li>
+      El <strong><em class="resal">márgen</em></strong> (margin). En naranja, es la parte exterior del elemento, por fuera del borde.
+    </li>
+    <li>
+      El <strong><em class="resal">relleno</em></strong> (padding). En verde, es la parte interior del elemento, entre el contenido y el borde.
+    </li>
+    <li>
+      El <strong><em class="resal">contenido</em></strong> (en azul). En azul, es la parte interior del elemento, excluyendo el relleno.
+    </li>
+    </ul>
+</div>
+
+<div align="center">
+  <img src = "p3.jpg" width="250" height="250" alt = "Elementos" />
+</div>
+
+</div>
+
+
+
+
+
+
+<div id=dimenciones>
+<div>
+  <h2 id="ti"> Dimenciones de un modelo de caja </h2>
+  <p>
+    Para dar tamaños específicos a los diferentes elementos de un documento HTML, necesitaremos asignarles valores a las propiedades <em class="especial">width</em> (ancho) y <em class="especial">height</em> (alto).
+  </p><br>
+  <p>
+    En el caso de utilizar el valor auto en las propiedades anteriores (que es lo mismo que no indicarlas, ya que es el valor que tienen por defecto), el navegador se encarga de calcular el ancho o alto necesario, dependiendo del contenido del elemento. Esto es algo que también puede variar, dependiendo del tipo de elemento que estemos usando, y que veremos más adelante, en el apartado de maquetación.
+  </p><br>
+  <p>
+    Hay que ser muy conscientes de que, sin indicar valores de ancho y alto para la caja, el elemento generalmente toma el tamaño que debe respecto a su contenido, mientras que si indicamos un ancho y alto concretos, estamos obligando a CSS tener un aspecto concreto.
+  </p>
+  <p>
+    Otra forma de lidiar con esto, es utilizar las propiedades hermanas de width: <em class="especial">min-width</em> y <em class="especial">max-width</em> y las propiedades hermanas de height: <em class="especial">min-height</em> y <em class="especial">max-height</em>. Con estas propiedades, en lugar de establecer un tamaño fijo, establecemos unos máximos y unos mínimos, donde el ancho o alto podría variar entre esos valores.
+  </p>
+</div>
+</div>
+
+
+
+
+
+
+<div id=zonas>
+<div>
+  <h2> Zonas de un elemento </h2>
+  <ul>
+    <li>
+      <strong><em class="resal">Top:</em></strong> Se refiere a la parte superior del elemento.
+    </li>
+    <li>
+      <strong><em class="resal">Left:</em></strong> Se refiere a la parte izquierda del elemento.
+    </li>
+    <li>
+      <strong><em class="resal">Right:</em></strong> Se refiere a la parte derecha del elemento.
+    </li>
+
+    <li>
+      <strong><em class="resal">Bottom:</em></strong> Se refiere a la parte inferior del elemento.
+    </li>
+
+    <li>
+     <strong><em class="resal">Center:</em></strong> En algunos casos se puede especificar el valor center para referirse a la posición central entre los extremos horizontales o verticales.
+  </li>
+  </ul>
+  <div align="center">
+  <img src = "p4.jpg" width="400" height="250" alt = "zonas del elemento" />
+  </div>
+
+
+
+
+
+
+  <div id=desbordamiento>
+
+  <div>
+    <h2 id="ti"> Desbordamiento </h2>
+  </div>
+
+  <div align="center">
+  <img src = "p5.png" width="300" height="200" alt = "Desbordamiento" />
+  </div>
+
+  <div>
+    <p>
+      Despues de ver la imagen anterior: Damos un tamaño de ancho y alto a un elemento HTML, pero su contenido de texto es tan grande que no cabe dentro de ese elemento. ¿Qué ocurriría? Probablemente con lo que vimos en la imagen anterior: el contenido se desbordaría.<br>
+      Podemos modificar ese comportamiento con la propiedad de CSS overflow, o con alguna de sus propiedades específicas overflow-x o overflow-y:
+    </p>
+
+    <ul>
+      <li>
+        <strong><em class="resal">overflow:</em></strong> Establece el comportamiento de desbordamiento.
+      </li>
+      <li>
+        <strong><em class="resal">overflow-x:</em></strong> Establece el desbordamiento sólo para el eje X (horizontal).
+      </li>
+      <li>
+        <strong><em class="resal">overflow-y:</em></strong> Establece el desbordamiento sólo para el eje Y (vertical).
+      </li>
+    </ul>
+
+    <p>
+      Dichas propiedades pueden tomar varios valores, donde visible es el valor que tiene por defecto, que permite que haya desbordamiento. 
+    </p>
+    <ul>
+      <li>
+        <strong><em class="resal">visible:</em></strong> Se muestra el contenido que sobresale (comportamiento por defecto) marca un desbordamiento.
+      </li>
+      <li>
+        <strong><em class="resal">hidden:</em></strong> Se oculta el contenido que sobresale aqui no se marca el desbordamiento.
+      </li>
+      <li>
+        <strong><em class="resal">scroll:</em></strong> Se colocan barras de desplazamiento (horizontales y verticales) aqui no se marca el desbordamiento.
+      </li>
+      <li>
+        <strong><em class="resal">auto:</em></strong> Se colocan barras de desplazamiento (sólo las necesarias) aqui no se marca el desbordamiento.
+      </li>
+    </ul>
+</div>
+</div>
+
+
+
+
+</div>
+</body>
+</html>
