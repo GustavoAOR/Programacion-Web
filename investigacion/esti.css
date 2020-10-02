@@ -2,7 +2,7 @@ body {font-family: Arial; font-size: 12pt;}
 
 p{line-height: 150%;}
 
-#titulo-grande{font-size: 28pt;}
+#titulo-grande{text-align: center; font-size: 28pt;}
 
 
 #ti{font-size: 14pt;}
@@ -13,3 +13,6 @@ em.especial {font-family: Arial; color: #FF1493;}
 
 em.resal {font-family: Arial; color: #0000FF;}
 
+img#p33{width: 250px; height: 250px;}
+img#p44{width: 400px; height: 250px;}
+img#p55{width: 300px; height: 200px;}
