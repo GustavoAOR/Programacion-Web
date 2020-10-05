@@ -35,6 +35,21 @@ em.ed {color: #0000FF;
     margin: auto;
 }
 
+#tt{
+	text-align: center;
+
+}
+
+#ttt{
+	text-align: center;
+
+}
+
+#uu{
+	text-align: center;
+
+}
+
 img#ches{width: 250px; height: 300px;}
 img#gray{width: 300px; height: 300px;}
 img#li{width: 1000px; height: 500px;}
