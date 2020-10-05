@@ -11,12 +11,33 @@ p{line-height: 150%;}
 em.ed {color: #0000FF;
 	   font-family: Arial;
 	  }
+.chess{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
 
+.grayy{
+	width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.park{
+	width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.vi{
+	width: 100%;
+    display: block;
+    margin: auto;
+}
 
 img#ches{width: 250px; height: 300px;}
 img#gray{width: 300px; height: 300px;}
 img#li{width: 1000px; height: 500px;}
-
 video#video{width: 1000px; height: 400px;}
 
 
