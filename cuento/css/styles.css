@@ -1,0 +1,38 @@
+*{
+	font-family: "century gothic";
+	background-color: #FFC9CA;
+}
+
+#titulo{
+	background-color: #C32519;
+	color: #FFFFFF;
+	font-size: 60px;
+	padding: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+p{
+	font-weight: 700;
+	font-size: 40px;
+	text-align: justify;
+}
+
+button{
+	font-size: 25px;
+	border-radius: 80px;
+	border: 5px solid #C32519;
+}
+
+button:hover{
+	background-color: #C32519;
+	color: #FFFFFF;
+}
+
+#canasta2, #lobo1, #cazador1, #cap2, #abuelita2{
+	visibility: hidden;
+}
+
+.row{
+	margin-top: 35px;
+}
