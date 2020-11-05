@@ -19,7 +19,7 @@ p{
 }
 
 button{
-	font-size: 25px;
+	font-size: 20px;
 	border-radius: 80px;
 	border: 5px solid #C32519;
 }
@@ -29,10 +29,15 @@ button:hover{
 	color: #FFFFFF;
 }
 
-#canasta2, #lobo1, #cazador1, #cap2, #abuelita2{
+img#canasta2, #lobo1, #cazador1, #cap2, #abuelita2{
 	visibility: hidden;
+	margin: auto;
+	width: 90%;
+	display:block;
+	background-size: 100% 100%;
 }
 
 .row{
 	margin-top: 35px;
 }
+
