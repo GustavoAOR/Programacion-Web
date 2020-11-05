@@ -1,0 +1,56 @@
+body {
+	font-family: 'Itim', cursive;
+	text-align: justify;
+	box-sizing: border-box;
+}
+
+.fakeimg {
+    height: 200px;
+    background: black;
+}
+
+#Encabezado {
+	margin-bottom:0;
+}
+
+#Contenido_Principal {
+	margin-top:30px;
+}
+
+figure{
+	text-align: center;
+}
+
+#Pie_Página {
+	margin-bottom:0;
+}
+
+img#habi{
+	margin: auto;
+	width: 1000px;
+	height: 500px;
+	display:block;
+	background-size: 100% 100%;
+	}
+img#peso{
+	margin: auto;
+	width: 350px;
+	height: 200px;
+	display:block;
+	background-size: 100% 100%;
+	}
+img#comida{
+	margin: auto;
+	width: 360px;
+	height: 300px;
+	display:block;
+	background-size: 100% 100%;
+	}
+
+img#osito{
+	margin: auto;
+	width: 1000px;
+	height: 400px;
+	display:block;
+	background-size: 100% 100%;
+	}
